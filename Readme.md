@@ -8,22 +8,22 @@ curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /
 Copy code
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
-###Now Update Machine:
+### Now Update Machine:
 ```sh
 Copy code
 sudo apt-get update
 ```
-###To install Jenkins:
+### To install Jenkins:
 ```sh
 Copy code
 sudo apt-get install jenkins
 ```
-###Setup Jenkins as a Daemon:
+### Setup Jenkins as a Daemon:
 ```sh
 Copy code
 systemctl cat jenkins
 ```
-###Jenkins Status:
+### Jenkins Status:
 ```sh
 Copy code
 sudo systemctl status jenkins
